@@ -70,7 +70,7 @@ def extract_playlist_id(service,playlistName):
     playlists = responses["items"]
     while True:
         for playlist in playlists:
-            if playlist["snippet"]["title"].lower().capitalize() == playlistName:
+            if playlist["snippet"]["title"].lower().title() == playlistName:
                 PlayID = playlist["id"]
                 break
         if PlayID == None and ("nextPageToken" in responses):

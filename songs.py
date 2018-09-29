@@ -1,4 +1,4 @@
-def video_id(service,songname):
+def video_id(service,songname,no=0):
     """
     Searches for the song and returns the VideoID
     """
@@ -6,14 +6,19 @@ def video_id(service,songname):
         SongName = songname
     else:
         SongName = songname + " song"
-    song = service.search().list(part="snippet,id",q=SongName,type="video").execute()["items"][0]
+    song = service.search().list(part="snippet,id",q=SongName,type="video").execute()["items"][no]
     return song["id"]["videoId"]
 
 def song_extract(filename):
     """
     Reads a file of songs and returns a list of song names
     """
-    s_f =  open(filename,'r',encoding='utf-8')
+    try:
+        s_f =  open(filename,'r',encoding='utf-8')
+    except:
+        print("Cannot open file.")
+        exit(0)
+    
     songs = []
     while True:
         song = s_f.readline()

@@ -49,7 +49,7 @@ def youtube_add(service,name,choice):
     Adds songs to youtube playlist
     """
 
-    playlist = input("Playlist Name > ").strip().lower().capitalize()
+    playlist = input("Playlist Name > ").strip().lower().title()
     playlist_id = pl.extract_playlist_id(service,playlist)
 
     if choice == 'f':
