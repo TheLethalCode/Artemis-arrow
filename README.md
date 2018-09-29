@@ -1,5 +1,9 @@
 # Artemis-arrow
 
-As of now, Artemis Arrow can add a bunch of songs from a file to a new playlist in YouTube or an already present one. It doesn't repeat the songs in the playlist.
+Artemis arrow can add songs to your youtube playlist. It doesn't repeat the songs. It also can download the song as a local copy in mp3 format.
 
-(Under Development)
+It can take the input as a file or from the terminal
+
+## Planned Features(Under Development)
+
+- Upload the songs to google drive
