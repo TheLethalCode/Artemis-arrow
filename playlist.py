@@ -1,3 +1,5 @@
+import authentication as at
+
 def build_resource(properties):
     """
     This builds the body listed by the properties which can further be
@@ -57,7 +59,7 @@ def delete_playlist(service,did):
     """
     service.playlists().delete(id=did).execute()
 
-def extract_playlist_id(service,playlistName):
+def extract_playlist_id(service,playlistName,no=0):
     
     """
     Finds the ID of the playlist of the given name. If it is not present,
@@ -81,13 +83,15 @@ def extract_playlist_id(service,playlistName):
             playlists = responses["items"]
         else:
             break
-    if PlayID == None:
+            
+    if PlayID == None and not no:
         ans = input("\nNo playlist found with the given name. Do you want to create a new one? y/n ").strip().lower()
         if ans == 'y':
             PlayID = create_playlist(service,playlistName)
             print("\nCreated new playlist")
         else:
             exit(0)
+
     return PlayID
 
 def playlist_list(service,playlist_id):
@@ -109,3 +113,9 @@ def playlist_list(service,playlist_id):
         else:
             break
     return song_ids
+
+if __name__ == '__main__':
+
+    service =  at.get_authenticated_service_y()
+    id = extract_playlist_id(service,"Mine",1)
+    delete_playlist(service,id)

@@ -12,11 +12,11 @@ if __name__ == '__main__':
                       2)Download the song\n\
                       3)Upload the songs to drive\n").split()
     
-    if 1 in choice_1:
-        youtube = at.get_authenticated_service()
+    if '1' in choice_1:
+        youtube = at.get_authenticated_service_y()
     else:
-        youtube = at.get_normal_service()
-        
+        youtube = at.get_normal_service_y()
+
     if choice == 'f':
         song_file = input("File Name > ").strip()
         

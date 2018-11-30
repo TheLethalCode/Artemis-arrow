@@ -24,7 +24,7 @@ def youtbe_dl_down(url,song,dir):
         ydl.download([url])
 
 if __name__ == '__main__':
-    service = at.get_authenticated_service()
+    service = at.get_normal_service_y()
     song="faded"
     id = sg.video_id(service,song)
     dir = '.'

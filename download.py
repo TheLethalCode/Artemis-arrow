@@ -120,7 +120,7 @@ def download_songs(service,songs,choice):
     """
 
     # Takes the name of the directory
-    dir_name = input("Enter the path to the directory where you want to store the songs:-\
+    dir_name = input("\nEnter the path to the directory where you want to store the songs:-\
     \n('.' for the current directory)\n").strip()
     if not os.path.exists(dir_name):
         ex_songid = []
@@ -157,12 +157,12 @@ def download_songs(service,songs,choice):
                 for ind,song in enumerate(songs[temp:]):
                     id = sg.video_id(service,song,fl)
                     if id not in ex_songid:
-                        print("Downloading song %d ......" % (ind+1+temp))
+                        print("Downloading song %d %s......" % (ind+1+temp,song))
                         download_song(service,song,id,dir_name)
                         print("Downloaded song %d    \n" % (ind+1+temp))
 
                     else:
-                        print("Skipping song %d, song already present" % (ind+1+temp))
+                        print("Skipping song %d %s, song already present" % (ind+1+temp,song))
                     done+=1
                     fl=0
             
@@ -171,13 +171,12 @@ def download_songs(service,songs,choice):
                 if done:
                     break
                 id = sg.video_id(service,songs)
-                song = songs
                 if id not in ex_songid:
                     print("Downloading song ......")
                     download_song(service,songs,id,dir_name)
                     print("\nDownloaded song     \n")
                 else:
-                    print("Skipping song, song already present")
+                    print("Skipping song %s, song already present" % songs)
             break
         
         except KeyboardInterrupt:
@@ -199,6 +198,6 @@ def download_songs(service,songs,choice):
                 fl=1
 
 if __name__ == '__main__':
-    service = at.get_authenticated_service()
+    service = at.get_authenticated_service_y()
     songs = sg.song_extract("Songs.txt")
     download_songs(service,songs,'f')
