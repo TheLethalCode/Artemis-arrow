@@ -34,7 +34,7 @@ What changes you have done, please  checkout  the boxes that apply
 
 
 ## Checklist
-Please checkout the boxes that apply. You can also fill these out after creating the PR. If you're unsure about any of them, don't hesitate to ask .Join our gitter channel and feel free to ask.
+Please checkout the boxes that apply. You can also fill these out after creating the PR. If you're unsure about any of them, don't hesitate to ask .Join our slack channel and feel free to ask.
 
 - [ ]  I  have  read the Contribution GuideLines.
 - [ ] I have added tests that prove my fix is effective or that my feature works.
