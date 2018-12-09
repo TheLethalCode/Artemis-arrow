@@ -59,12 +59,13 @@ if __name__ == '__main__':
 	'''
 
 for index in range(1,30000):
-		try:
-			#Handling the exception when page is not found
-			r=requests.get("https://myanimelist.net/anime/"+str(index)+"/")		
-			r.raise_for_status()
-		except requests.exceptions.HTTPError as err:
-				continue
-		soup=make_soup("https://myanimelist.net/anime/"+str(index)+"/")
-		info_anime(soup)
+
+	try:
+		#Handling the exception when page is not found
+		r=requests.get("https://myanimelist.net/anime/"+str(index)+"/")		
+		r.raise_for_status()
+	except requests.exceptions.HTTPError as err:
+			continue
+	soup=make_soup("https://myanimelist.net/anime/"+str(index)+"/")
+	info_anime(soup)
 
