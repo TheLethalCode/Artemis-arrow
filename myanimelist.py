@@ -60,9 +60,7 @@ if __name__ == '__main__':
 
 for index in range(1,30000):
 		try:
-			'''
-			Handling the exception when Error 404 shows up i.e page is not found
-			'''
+			#Handling the exception when Error 404 shows up i.e page is not found
 			r=requests.get("https://myanimelist.net/anime/"+str(index)+"/")		
 			r.raise_for_status()
 		except requests.exceptions.HTTPError as err:
