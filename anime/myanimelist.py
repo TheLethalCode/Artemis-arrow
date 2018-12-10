@@ -57,7 +57,6 @@ if __name__ == '__main__':
 	Iterating the loop from 1 to 30000 to store data from myanimelist
 	where the url is  https://myanimelist.net/anime/(some number)/
 	'''
-
 	for index in range(1,30000):
 		try:
 			#Handling the exception when page is not found
