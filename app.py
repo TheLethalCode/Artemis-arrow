@@ -1,7 +1,9 @@
+import os
 from flask import Flask, render_template, request
 
 
 app= Flask('__main__')
+app.root_path = os.path.dirname(os.path.abspath(__file__))
 
 
 @app.route('/')
