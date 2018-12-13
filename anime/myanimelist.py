@@ -9,7 +9,7 @@ ANIME_URL = "https://myanimelist.net/anime/"
 JSON_PATH = os.path.join(os.path.dirname(__file__),"anime.json")
 
 def make_soup(source):
-	soupdata=BeautifulSoup(source.content,'lxml')
+	soupdata=BeautifulSoup(source.content,'html.parser')
 	return soupdata
 
 def info_anime(soup):
@@ -70,7 +70,7 @@ def gen_list(start,end):
 if __name__ == '__main__':
 	
 	with open(JSON_PATH,'w') as json_file:
-		json.dump(gen_list(1,20),json_file)
+		json.dump(gen_list(393,400),json_file)
 		json_file.close()
 	
 
