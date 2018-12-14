@@ -22,7 +22,7 @@
 			<p><strong>Before Proceding kindly authenticate!!!</strong></p>
 			<div id="login">
 				<br>
-				<form>
+				<form action="/profile" method="POST">
   					 Email:<br>
  					 <input type="text" name="email" placeholder = "email@xyz.com" required="true">
  					 <br><br>
@@ -33,7 +33,7 @@
 				</form> 
 			</div>
 			<div id="register">
-				<form>
+				<form action="/aftersignup" method="POST">
   					 First Name:<br>
  					 <input type="text" name="firstname" placeholder="firstname" required="true">
  					 <br><br>
@@ -44,7 +44,7 @@
  					 <input type="text" name="email" placeholder = "email@xyz.com" required="true">
  					 <br><br>
  					 Username:<br>
-					 <input type="text" name="username" placeholder = "user_name" required="true">
+					 <input type="text" name="username" placeholder = "username" required="true">
 					 <br><br>
 					 Password:<br>
 					 <input type="password" name="password" placeholder = "" id="reg-password" required="true">
@@ -54,18 +54,6 @@
 					 <br><br>
 					 <button class="btn" id="register-btn">REGISTER</button>
 				</form> 
-			</div>
-		</div>
-
-		<div id="selection"> 
-			<div id="book">
-				<button id="book-btn">books</button>
-			</div>
-			<div id="songs">
-				<button id="song-btn">songs</button>
-			</div>
-			<div id="anime">
-				<button id="anime-btn">anime</button>
 			</div>
 		</div>
 	</div>
