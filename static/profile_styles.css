@@ -30,6 +30,9 @@ nav{
 	font-weight: bold;
 	width: 100vw;
 }
+
+
+
 li{
 	list-style: none;
 	padding: auto;
@@ -78,4 +81,12 @@ li i{
 
 }
 
+
+#flashes{
+	color: red;
+	background-color: grey;
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+}
 
