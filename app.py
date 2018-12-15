@@ -5,7 +5,9 @@ app= Flask('__main__')
 
 
 @app.route('/')
+
 def main():
+
 	return render_template('index.html')
 
 @app.route('/aftersignup',methods = ['POST', 'GET'])
@@ -36,17 +38,18 @@ def profile():
 			email = request.form['email']
 			pwd = request.form['password']
 			con = sql.connect("da1.db")
-			f=0
-			cursor=con.execute("select * from users")
+			cursor=con.execute("SELECT password FROM users WHERE email = ?",(email,))
 			for row in cursor:
-				if(row[2]==email and row[4]==pwd):
+				if(row[0]==pwd):
 					msg="login succcessfully"
-					f=1
 					return render_template("profile.html",msg=msg)
-			if(f==0):
-				msg="login unsuccessfull"
-				return render_template("index.html",msg=msg)
+				else:
+					msg="login unsuccessful"
+					return render_template("index.html",msg=msg)
 
+@app.route('/logout')
+def logout():
+	return render_template("index.html")
 
 if __name__ == '__main__':
    app.run(debug = True)
