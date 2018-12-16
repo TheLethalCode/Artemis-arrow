@@ -1,4 +1,5 @@
 import os
+from decouple import config
 from bs4 import BeautifulSoup                               
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -12,8 +13,8 @@ from selenium.common.exceptions import TimeoutException, WebDriverException
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.firefox.options import Options
 
-usernameStr="vjs22334"
-passwordStr="wildmutt"
+usernameStr=config("KISSANIME_USERNAME")
+passwordStr=config("KISSANIME_PASSWORD")
 
 # a function to load chromedriver onto path
 def SetupSelenium():
