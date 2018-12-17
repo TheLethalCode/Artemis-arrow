@@ -13,8 +13,8 @@ def login(browser):
 	usernameBox = browser.find_element_by_xpath('//*[@id="username"]')
 	passwordBox = browser.find_element_by_xpath('//*[@id="password"]')
 	time.sleep(1)
-	usernameBox.send_keys('artemis.arrow')
-	passwordBox.send_keys('strongpassword')
+	usernameBox.send_keys('')#add username
+	passwordBox.send_keys('')#add password
 	loginButton = browser.find_element_by_xpath('//*[@id="btnSubmit"]')
 	loginButton.click()
 	return browser
