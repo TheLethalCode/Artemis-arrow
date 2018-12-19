@@ -40,9 +40,9 @@ We will be using the Youtube REST API, for querying the song data, through which
 
 #### Books
 
-We will be mostly using "Library Genesis" (a website for all book contents) for downloading all the books. For additional features,we will be using GoodReads API to add the books to the favourite list.
+We will be mostly using ["Library Genesis"](https://libgen.is/) (a website for all book contents) for downloading all the books. For additional features,we will be using GoodReads API to add the books to the favourite list.
 
 #### Anime
 
-The primary website where download of anime seems feasible is "kissanime.ru" (if you find any other place, please inform me XD). So we will be using the kissanime.ru (rapidvideo server is the most easiet, but not foolproof) website for downloading any anime. As an additional feature, we will be adding the downloaded anime to myanime.net watch list.
+The primary website where download of anime seems feasible is [KissAnime](http://kissanime.ru/) (if you find any other place, please inform me XD). So we will be using the kissanime.ru (rapidvideo server is the most easiet, but not foolproof) website for downloading any anime. As an additional feature, we will be adding the downloaded anime to [MAL](https://myanimelist.net/) watch list.
 
