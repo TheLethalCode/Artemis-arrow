@@ -94,6 +94,7 @@ def profile():
 			else:
 				msg="login unsuccessful"
 				return render_template("index.html",msg=msg)
+	return render_template("index.html")
 
 @app.route('/logout')
 def logout():
