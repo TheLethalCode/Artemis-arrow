@@ -108,3 +108,5 @@ credentials.json
 Songs.txt
 client_secret.json
 authentication.py
+flask_session
+database.db

@@ -1,11 +1,12 @@
 from flask import Flask, render_template, request, flash, redirect
 from flask_session import Session
 import sqlite3 as sql
-import database
+import connection as cn
 import config
 import os
 
-DATABASE = "database.db"
+DATABASE = cn.DATABASE
+cn.get_db()
 
 TEMPLATE_DIR = os.path.join(os.path.dirname(__file__),"templates")
 STATIC_DIR = os.path.join(os.path.dirname(__file__),"static")
@@ -42,12 +43,12 @@ def signup():
 		else:
 			cur = con.cursor()
 			result = cur.execute(
-						'SELECT * FROM people WHERE username=?;',(unm,)
+						'SELECT * FROM users WHERE username=?;',(unm,)
 						).fetchall()
 			
 			if not result:
 				result = cur.execute(
-					'SELECT * FROM people WHERE email=?;',(email,)
+					'SELECT * FROM users WHERE email=?;',(email,)
 					).fetchall()
 				
 				if not result:
