@@ -7,13 +7,27 @@
 	<link rel="stylesheet" type="text/css" href="../static/profile_styles.css">
 </head>
 <body>
+<div id="selection"> 
+			<div id="book">
+				<button id="book-btn">books</button>
+			</div>
+			<div id="songs">
+				<button id="song-btn">songs</button>
+			</div>
+			<div id="anime">
+				<button id="anime-btn">anime</button>
+			</div>
+		</div>
+	</div>
 	<div class="container">
 		<div class="title">
 			What do you want to see today???
-			<nav><button class="btn" id="logout-btn">logout</button></nav>
+			<form action="/">
+					<nav><button class="btn" id="logout-btn">logout</button></nav>
+			</form>
 		</div>
 		<div class="search">
-		    <form >
+		    <form>
 		      <input type="text" placeholder="Search.." name="search">
 		      <button type="submit"><i class="fa fa-search"></i></button>
 		    </form>
@@ -59,11 +73,23 @@
 			</div>
 	</div>
 
+<div id = 'flashes'>
+{% with messages = get_flashed_messages() %}
+   {% if messages %}
+      {% for message in messages %}
+         {{ message }}
+      {% endfor %}
+   {% endif %}
+{% endwith %}
+</div>
+		
+
+
 	<script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
-	<script type="text/javascript" src="../js/profile_script.js"></script>
+<!--	<script type="text/javascript" src="../js/profile_script.js"></script>	-->
 
 </body>
 </html>

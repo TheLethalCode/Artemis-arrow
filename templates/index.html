@@ -6,6 +6,20 @@
 	<link rel="stylesheet" type="text/css" href="../static/index_styles.css">
 </head>
 <body>
+
+		<div id="selection"> 
+			<div id="book">
+				<button id="book-btn">books</button>
+			</div>
+			<div id="songs">
+				<button id="song-btn">songs</button>
+			</div>
+			<div id="anime">
+				<button id="anime-btn">anime</button>
+			</div>
+		</div>
+	</div>
+
 	<div id="container">
 		<div id="title">
 
@@ -22,7 +36,7 @@
 			<p><strong>Before Proceding kindly authenticate!!!</strong></p>
 			<div id="login">
 				<br>
-				<form>
+				<form action="/profile" method="POST">
   					 Email:<br>
  					 <input type="text" name="email" placeholder = "email@xyz.com" required="true">
  					 <br><br>
@@ -33,7 +47,7 @@
 				</form> 
 			</div>
 			<div id="register">
-				<form>
+				<form action="{{ url_for('signup') }}" method="post">
   					 First Name:<br>
  					 <input type="text" name="firstname" placeholder="firstname" required="true">
  					 <br><br>
@@ -44,7 +58,7 @@
  					 <input type="text" name="email" placeholder = "email@xyz.com" required="true">
  					 <br><br>
  					 Username:<br>
-					 <input type="text" name="username" placeholder = "user_name" required="true">
+					 <input type="text" name="username" placeholder = "username" required="true">
 					 <br><br>
 					 Password:<br>
 					 <input type="password" name="password" placeholder = "" id="reg-password" required="true">
@@ -57,22 +71,21 @@
 			</div>
 		</div>
 
-		<div id="selection"> 
-			<div id="book">
-				<button id="book-btn">books</button>
-			</div>
-			<div id="songs">
-				<button id="song-btn">songs</button>
-			</div>
-			<div id="anime">
-				<button id="anime-btn">anime</button>
-			</div>
-		</div>
-	</div>
-	<script
+<div id = 'flashes'>
+{% with messages = get_flashed_messages() %}
+   {% if messages %}
+      {% for message in messages %}
+         {{ message }}
+      {% endfor %}
+   {% endif %}
+{% endwith %}
+</div>
+
+
+	<!-- <script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
-	<script type="text/javascript" src="../js/index_script.js"></script>
+  crossorigin="anonymous"></script> -->
+	<script type="text/javascript" src="../static/js/index_script.js"></script>
 </body>
 </html>
