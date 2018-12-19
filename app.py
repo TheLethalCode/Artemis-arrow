@@ -87,13 +87,18 @@ def profile():
 		results = cur.execute(
 				"SELECT password FROM users WHERE email=?",(email,)
 				).fetchall()
-		for row in results:
-			if(row[0]==pwd):
-				msg="login succcessfull"
-				return render_template("profile.html",msg=msg)
-			else:
-				msg="login unsuccessful"
-				return render_template("index.html",msg=msg)
+		if results:
+			for row in results:
+				if(row[0]==pwd):
+					msg="login succcessfull"
+					return render_template("profile.html",msg=msg)
+				else:
+					flash('Passwords do not match','invalid')
+					return render_template("index.html",msg=msg)
+		
+		else:
+			flash('Username does not exist','invalid')
+			return render_template('index.html')
 
 @app.route('/logout')
 def logout():
