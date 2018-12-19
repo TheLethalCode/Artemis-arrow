@@ -3,6 +3,9 @@ body{
 	min-width: 500px;
 }
 
+
+
+
 #title{
 	text-align: center;
 	font-family: "Bebas Neue", Arial;
@@ -73,3 +76,11 @@ form{
 	visibility: hidden;
 }
 
+
+#flashes{
+	color: red;
+	background-color: grey;
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+}
