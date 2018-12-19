@@ -4,11 +4,14 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.common.by import By
+from selenium.webdriver.firefox.options import Options
 import time
 
-
 def setUp():
-    driver = webdriver.Firefox()
+    opts = Options()
+    opts.set_headless()
+    assert opts.headless
+    driver = webdriver.Firefox(options=opts)
     return driver
 
 
