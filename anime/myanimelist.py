@@ -85,7 +85,11 @@ def gen_list(start, end):
 
 if __name__ == '__main__':
 	with open(JSON_PATH,'w') as json_file:
+<<<<<<< Updated upstream
 		json.dump(gen_list(1,1000),json_file)
+=======
+		json.dump(gen_list(394,10000),json_file)
+>>>>>>> Stashed changes
 		json_file.close()
 	
 
