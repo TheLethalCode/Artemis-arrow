@@ -1,33 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Artemis Arrow Login Page</title>
-
-    <!-- Font Icon -->
-    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
-
-    <!-- Main css -->
-    <link rel="stylesheet" href="css/style.css">
+	<title>Artemis-Arrow</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../static/index_styles.css">
 </head>
 <body>
-     <div class="container">
-            <div class="signup-content">
-                <form method="POST" id="signup-form" class="signup-form">
-                    <h2>Sign in </h2>
-                     <div class="form-group">
-                        <input type="text" class="form-input" name="Username" id="name" placeholder="Username"/>
-                    </div>
-                     <div class="form-group">
-                        <input type="text" class="form-input" name="password" id="password" placeholder="Password"/>
-                        <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
-                    </div>
-                     <div class="form-group">
-                        <input type="submit" name="submit" id="submit" class="form-submit submit" value="Sign in">
-                    </div></form></div></div> <!-- JS -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
-</html></body></html>
+    <p style="color:aliceblue">Welcome Back to Artemis Arrow. Please sign in to enter a magical world.</p>
+    <div id="login">
+				<br>
+				<form>
+  					 Email:<br>
+ 					 <input type="text" name="email" placeholder = "email@xyz.com" required="true">
+ 					 <br><br>
+					 Password:<br>
+					 <input type="password" name="password" placeholder = "" required="true">
+					 <br><br>
+					 <button class="btn" id="login-btn">LOGIN</button>
+				</form> 
+        
+			</div>
+    <div id="selection"> 
+			<div id="book">
+				<button id="book-btn">books</button>
+			</div>
+			<div id="songs">
+				<button id="song-btn">songs</button>
+			</div>
+			<div id="anime">
+				<button id="anime-btn">anime</button>
+			</div>
+		</div>
+	</div>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../js/index_script.js"></script>
+    </body></html>
