@@ -26,7 +26,7 @@ def main():
 def signup():
 
 	if request.method=='GET':
-		return redirect('/profile',code = 301)
+		return render_template('Register.html')
 	
 	try:
 		con = sql.connect(DATABASE)
@@ -74,8 +74,8 @@ def signup():
 	return render_template("aftersignup.html",msg=msg)
 	
 
-@app.route('/profile',methods=['POST', 'GET'])
-def profile():
+@app.route('/login',methods=['POST', 'GET'])
+def login():
 
 	if request.method == 'POST':
 
@@ -99,10 +99,15 @@ def profile():
 		else:
 			flash('Username does not exist','invalid')
 			return render_template('index.html')
+	
+	else:
+		return render_template('signin.html')
+
 
 @app.route('/logout')
 def logout():
 	return render_template("index.html")
+
 
 if __name__ == '__main__':
    app.run(debug = True)
