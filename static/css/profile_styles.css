@@ -1,38 +1,51 @@
 body{
-	margin: 0;
-	padding: 0;
-	min-width: 400px;
+	background-image: url("https://cache.desktopnexus.com/thumbseg/2006/2006797-bigthumbnail.jpg");
+	
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
+
 nav{
 	float: right;
+}
+.search-btn{
+    font-size: 20px;
+    background-color:aquamarine;
+}
+.search-btn:hover{
+    background-color:dodgerblue;
+	color: black;
+	transition: 0.5s;
+
+    
+}
+
 }
 .container{
 	margin:auto;
 	padding:auto;
-	background-color: #000; 
+	 
 	color: white;
 	text-align: center;
 	height: 100vh;
 }
 
 .title{
-	color: #1AB309;
+	color:azure;
 	text-align: center;
 	padding-top: 10px;
 	font-family: "Bebas Neue", Arial;
 }
 
 .section-title{
-	color: #1AB309;
+	color:rgb(104,184,215);
 	font-size: 30px;
 	text-align: center;
 	padding-top: 100px;
 	font-weight: bold;
 	width: 100vw;
 }
-
-
-
 li{
 	list-style: none;
 	padding: auto;
@@ -55,14 +68,16 @@ li i{
 	border:2px solid white;
 	border-radius: 3%;
 	font-weight: bold;
+    color:coral;
 }
 
 #logout-btn{
 	margin-right: 10px;
+    color: darkkhaki;
 }
 
 .btn {
-  background-color: #000; /* Green */
+  background-color:crimson; 
   border: none;
   color: white;
   margin: auto;
@@ -81,12 +96,4 @@ li i{
 
 }
 
-
-#flashes{
-	color: red;
-	background-color: grey;
-	display: block;
-	margin: auto;
-	margin-top: 10px;
-}
 

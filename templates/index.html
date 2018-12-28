@@ -6,21 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="../static/css/index_styles.css">
 </head>
 <body>
-		
-		<div id="selection"> 
-			<div id="book">
-				<button id="book-btn">books</button>
-			</div>
-			<div id="songs">
-				<button id="song-btn">songs</button>
-			</div>
-			<div id="anime">
-				<button id="anime-btn">anime</button>
-			</div>
-		</div>
-	</div>
-
-	<div id="container">
+    
+	<div class="container">
 		<div id="title">
 
 			<h1>ARTEMIS ARROW</h1>
@@ -33,61 +20,28 @@
 		</div>
 
 		<div id="authentication">
-			<p><strong>Before Proceding kindly authenticate!!!</strong></p>
-			<div id="login">
-				<br>
-				<form action="/profile" method="POST">
-  					 Email:<br>
- 					 <input type="text" name="email" placeholder = "email@xyz.com" required="true">
- 					 <br><br>
-					 Password:<br>
-					 <input type="password" name="password" placeholder = "" required="true">
-					 <br><br>
-					 <button class="btn" id="login-btn">LOGIN</button>
-				</form> 
-			</div>
-			<div id="register">
-				<form action="{{ url_for('signup') }}" method="post">
-  					 First Name:<br>
- 					 <input type="text" name="firstname" placeholder="firstname" required="true">
- 					 <br><br>
-					 Last Name:<br>
-					 <input type="text" name="lastname" placeholder = "lastname" required="true">
-					 <br><br>
-					 Email:<br>
- 					 <input type="text" name="email" placeholder = "email@xyz.com" required="true">
- 					 <br><br>
- 					 Username:<br>
-					 <input type="text" name="username" placeholder = "username" required="true">
-					 <br><br>
-					 Password:<br>
-					 <input type="password" name="password" placeholder = "" id="reg-password" required="true">
-					 <br><br>
-					 Confirm password:<br>
-					 <input type="password" name="conf-password" placeholder = "" id="reg-conf-password" required="true">
-					 <br><br>
-					 <button class="btn" id="register-btn">REGISTER</button>
-				</form> 
-			</div>
+			<p id="auth"><strong>Before Proceding kindly authenticate!!!</strong></p>
+             <a href="Register.html"class="button">Register</a><br><br><br>
+             <a href="signin.html"class="button">Signin</a>
+			
 		</div>
 
-<div id = 'flashes'>
-{% with messages = get_flashed_messages() %}
-   {% if messages %}
-      {% for message in messages %}
-         {{ message }}
-      {% endfor %}
-   {% endif %}
-{% endwith %}
-</div>
-
-
+		<div id="selection"> 
+			<div id="book">
+				<button id="book-btn">books</button>
+			</div>
+			<div id="songs">
+				<button id="song-btn">songs</button>
+			</div>
+			<div id="anime">
+				<button id="anime-btn">anime</button>
+			</div>
+		</div>
+	</div>
 	<script
-		src="https://code.jquery.com/jquery-3.3.1.js"
-		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-		crossorigin="anonymous">
-	</script>
-  	<script type="text/javascript" src="../static/js/index_script.js"></script>
-
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../js/index_script.js"></script>
 </body>
 </html>
