@@ -90,15 +90,15 @@ def login():
 		if results:
 			for row in results:
 				if(row[0]==pwd):
-					msg="login succcessfull"
-					return render_template("profile.html",msg=msg)
+					flash("login succcessful")
+					return redirect("/profile")
 				else:
 					flash('Passwords do not match','invalid')
-					return render_template("index.html",msg=msg)
+					return redirect("/")
 		
 		else:
 			flash('Username does not exist','invalid')
-			return render_template('index.html')
+			return redirect('/')
 	
 	else:
 		return render_template('signin.html')
@@ -107,6 +107,10 @@ def login():
 @app.route('/logout')
 def logout():
 	return render_template("index.html")
+
+@app.route('/profile')
+def profile():
+	return render_template('profile.html')
 
 
 if __name__ == '__main__':
