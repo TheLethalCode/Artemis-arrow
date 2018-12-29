@@ -1,6 +1,6 @@
 body{
-	background-image: url("https://cache.desktopnexus.com/thumbseg/2006/2006797-bigthumbnail.jpg");
-	
+	background: url("images/container-bg.png")repeat 0 0;
+	background-color:firebrick;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -9,17 +9,110 @@ body{
 nav{
 	float: right;
 }
-.search-btn{
-    font-size: 20px;
-    background-color:aquamarine;
+* {
+  box-sizing: border-box;
 }
-.search-btn:hover{
-    background-color:dodgerblue;
-	color: black;
-	transition: 0.5s;
 
-    
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 40%;
+  background: #f1f1f1;
 }
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+  
+}
+h1{
+    text-align: center;
+	font-family: "Bebas Neue", Arial;
+    -webkit-animation:colorchange 20s infinite alternate;
+      
+      
+    }
+
+    @-webkit-keyframes colorchange {
+      0% {
+        
+        color: blue;
+      }
+      
+      10% {
+        
+        color: #8e44ad;
+      }
+      
+      20% {
+        
+        color: #1abc9c;
+      }
+      
+      30% {
+        
+        color: #d35400;
+      }
+      
+      40% {
+        
+        color: blue;
+      }
+      
+      50% {
+        
+        color: #34495e;
+      }
+      
+      60% {
+        
+        color: blue;
+      }
+      
+      70% {
+        
+        color: #2980b9;
+      }
+      80% {
+     
+        color: #f1c40f;
+      }
+      
+      90% {
+     
+        color: #2980b9;
+      }
+      
+      100% {
+        
+        color: pink;
+      }
+    }
+    
+
 
 }
 .container{
@@ -32,7 +125,7 @@ nav{
 }
 
 .title{
-	color:azure;
+	color:dodgerblue;
 	text-align: center;
 	padding-top: 10px;
 	font-family: "Bebas Neue", Arial;
