@@ -43,7 +43,7 @@ def signup():
 		else:
 			cur = con.cursor()
 			result = cur.execute(
-						'SELECT * FROM users WHERE username=?;',(unm,)
+						'SELECT * FROM users WHERE uname=?;',(unm,)
 						).fetchall()
 			
 			if not result:
