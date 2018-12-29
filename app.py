@@ -36,9 +36,11 @@ def signup():
 		email = request.form['email']
 		unm = request.form['username']
 		pwd = request.form['password']
-			
-		if not fnm and lnm and email and unm and pwd:
-			flash('All fields for signup are not filled!','invalid')
+		cpwd = request.form['conf-password']
+
+		if pwd != cpwd:
+			msg = "Passwords did not match"
+			flash('Passwords do not match','invalid')
 
 		else:
 			cur = con.cursor()
@@ -70,7 +72,8 @@ def signup():
 		con.rollback()
 		msg = "Error in Insert Operation"
 
-	con.close()		  
+	con.close()		 
+	print(msg) 
 	return render_template("aftersignup.html",msg=msg)
 	
 
