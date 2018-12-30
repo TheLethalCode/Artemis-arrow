@@ -4,10 +4,14 @@ from flask_session import Session
 import requests
 import sqlite3 as sql
 import connection as cn
-from songs import oauth, ext_down
 from config import Config
 import os
 import urllib
+from dotenv import load_dotenv                               
+from songs import oauth, ext_down
+from anime import anime_download
+
+load_dotenv()
 
 DATABASE = cn.DATABASE
 cn.get_db()
@@ -145,6 +149,38 @@ def song_down():
 	filename = ext_down.youtbe_dl_down(id,name)
 		
 	return send_file(filename,as_attachment=True,attachment_filename=attachment)
+
+
+@app.route('/anime')
+def anime_list():
+	
+	anime = request.args.get('anime')
+	result = anime_download.SearchAnime(anime)
+
+	if result["status"] == "success":
+		animes = []
+		for anime in result["links"]:
+			anime["link"] = url_for('anime_down',name=anime["name"],url=anime["url"])
+			animes.append(anime) 
+		return render_template('anime.html',results=animes)
+
+	return result["status"]
+
+
+@app.route('/anime/<name>')
+def anime_down(name):
+	
+	url = request.args.get('url')
+	print(url)
+	results = anime_download.getDownloadlinks(url)
+	if results["status"] == "success":
+		episodes = []
+		for ep in results["links"]:
+			ep["link"] = ep["url"]
+			episodes.append(ep)
+		return render_template('anime.html',results=episodes)
+
+	return results["status"]
 
 
 @app.route('/oauth2callback')

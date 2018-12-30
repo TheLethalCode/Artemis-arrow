@@ -1,6 +1,5 @@
 import os
 from bs4 import BeautifulSoup
-from dotenv import load_dotenv, find_dotenv                               
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
@@ -12,7 +11,6 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import TimeoutException, WebDriverException
 from selenium.webdriver.firefox.options import Options
 
-load_dotenv(find_dotenv())
 usernameStr=os.getenv("KISSANIME_USERNAME")
 passwordStr=os.getenv("KISSANIME_PASSWORD")
 
@@ -190,13 +188,13 @@ def getDownloadlinks(link):
                 episode_download_list.append(e)
 
             browser.quit()
-            resp["status"] = "sucess"
+            resp["status"] = "success"
             resp["links"] = episode_download_list
             return resp
 
         except TimeoutException as e:
             browser.quit()
-            resp["status"] = "sucess"
+            resp["status"] = "success"
             resp["links"] = episode_download_list
             return resp
         
