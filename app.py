@@ -1,9 +1,13 @@
 from flask import Flask, render_template, request, flash, redirect
+from flask import send_file, url_for, after_this_request
 from flask_session import Session
+import requests
 import sqlite3 as sql
 import connection as cn
-import config
+from songs import oauth, ext_down
+from config import Config
 import os
+import urllib
 
 DATABASE = cn.DATABASE
 cn.get_db()
@@ -12,7 +16,7 @@ TEMPLATE_DIR = os.path.join(os.path.dirname(__file__),"templates")
 STATIC_DIR = os.path.join(os.path.dirname(__file__),"static")
 
 app = Flask(__name__, template_folder=TEMPLATE_DIR, static_folder=STATIC_DIR)
-app.config.from_object('config.Config')
+app.config.from_object(Config)
 session = Session()
 session.init_app(app)
 
@@ -107,13 +111,56 @@ def login():
 		return render_template('signin.html')
 
 
-@app.route('/logout')
-def logout():
-	return render_template("index.html")
-
 @app.route('/profile')
 def profile():
 	return render_template('profile.html')
+
+
+@app.route('/song')
+def song_list():
+	song = request.args.get('song')
+	results  = ext_down.video_id(song)
+	
+	URL = "http://localhost:5000/song_down?"
+
+	for ind,result in enumerate(results):
+		f = {
+			"id" : result["id"],
+			"title" : result["title"],
+			"song" : song
+		}
+		result["url"] = URL + urllib.parse.urlencode(f)
+		results[ind] = result 
+	
+	return render_template('songs.html', results=results)
+
+
+@app.route('/song_down')
+def song_down():
+	
+	id = request.args.get('id')
+	name = request.args.get('title')
+	attachment = request.args.get('song') + ".mp3"
+
+	filename = ext_down.youtbe_dl_down(id,name)
+		
+	return send_file(filename,as_attachment=True,attachment_filename=attachment)
+
+
+@app.route('/oauth2callback')
+def oauth2callback():
+
+	try:
+		code=request.args.get('code')
+	except:
+		return "Acces denied"
+
+	resp = oauth.ret_token(code)
+
+
+@app.route('/logout')
+def logout():
+	return render_template("index.html")
 
 
 if __name__ == '__main__':
