@@ -1,9 +1,9 @@
 body{
-    background:url("images/container-bg.png")repeat 0 0;
+    background:url("../images/container-bg.png")repeat 0 0;
 	min-width: 500px;
      background-repeat:no-repeat;
 
-  background-color: brown;
+  background-color: rgb(211, 84, 11);
     background-size:cover;
 }
 
@@ -81,15 +81,17 @@ h1{
     text-align: center;
 }
 h3{
-	color:chocolate;
+	color:rgb(219, 30, 17);
 	margin-top: 0px;
 	font-size: 35px;
 }
 
 #intro p{
-	color:bisque;
-	font-size: 25px;
-	opacity: 0.5;
+	color:rgb(20, 4, 75);
+  font-size: 20px;
+  font-family: fantasy;
+  font-weight: 600;
+	opacity: 1;
 }
 #auth{
     color:aliceblue;}

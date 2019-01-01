@@ -1,5 +1,5 @@
 body{
-	background: url("images/container-bg.png")repeat 0 0;
+	background: url("../images/container-bg.png")repeat 0 0;
 	background-color:firebrick;
     background-repeat: no-repeat;
     background-size: cover;
