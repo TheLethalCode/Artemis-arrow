@@ -11,7 +11,7 @@
 <div class="container">
 	<div class="box">
 		<div id="title">
-			<div class="main-title">Artemis Arrow</div>
+			<div class="main-title">Artemis <span class="red-span">Arrow</span></div>
 		</div>
 
 		<div class="intro-text">
@@ -58,6 +58,9 @@
 	</div>
 	</div>
 </div>
+
+<div class="home-div"> <a class="home" href="{{ url_for('main') }}">Home</a></div>
+
 	<div id = 'flashes'>
 		{% with messages = get_flashed_messages() %}
 		   {% if messages %}
@@ -72,7 +75,6 @@
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
-	<!-- <script type="text/javascript" src="../static/js/index_script.js"></script> -->
 
 </body>
 </html>

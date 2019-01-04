@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+.red-span{
+  color: #9e1818;
+}
+
 body{
   background:url("../images/bg2.jpg");
   background-repeat:no-repeat;
@@ -19,7 +23,7 @@ body{
 .box{
   background-color: rgba(0,0,0,0.7); 
   width: 600px;
-  height: 600px;
+  height: 620px;
   border: 1px solid #fff;
   margin: 0 auto;
   margin-top: 50px;
@@ -89,7 +93,7 @@ body{
   .box{
     width: 80%;
     height: auto;
-    margin-bottom: 2rem;
+    padding-bottom: 1rem;
   }
 
   .intro-text{

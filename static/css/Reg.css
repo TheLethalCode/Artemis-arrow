@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400');
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
@@ -19,7 +19,7 @@ input:-webkit-autofill:focus {
   width: 150px;
   border: 1px solid #811212;
   font-family: 'Staatliches';
-  font-size: inherit;
+  font-size: 1.2rem;
 }
 
 .register-btn:hover{
@@ -36,22 +36,23 @@ input:-webkit-autofill:focus {
   border: 0;
   outline: 0;
   background: transparent;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1.5px solid #fff;
   color: #fff;
   padding-bottom: 3px;
 }
 
 .t-input:focus{
-  border-bottom: 1px solid #811212;
+  border-bottom-color: #811212;
   transition: 0.3s;
 }
 
 .t-input:valid{
-  border-bottom: 1px solid #15833a;
+  border-bottom-color:  #15833a;
   transition: 0.3s;
 }
 
 .t-input:invalid{
+  font-weight: 400;
   color: #811212;
   transition: 0.3s;
 }
@@ -144,4 +145,19 @@ input:-webkit-autofill:focus {
   #form{
     margin-bottom: 1rem;
   }
+}
+
+.home-div{
+  width: 100px;
+  margin: 0 auto;
+}
+
+.home{
+  font-family: 'Staatliches';
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: block;
+  margin: 1rem;
 }
