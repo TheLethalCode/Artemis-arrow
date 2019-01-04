@@ -11,12 +11,9 @@ body{
   background-repeat:no-repeat;
   background-size:cover;
 
+  max-height: 100%;
   height: 100vh;
   overflow: hidden;
-}
-
-.container{
-  
 }
 
 .box{
@@ -115,5 +112,6 @@ body{
 @media (max-height: 850px) and (min-height: 701px){
   body{
     height: 100vh;
+    max-height: 100%;
   }
 }
