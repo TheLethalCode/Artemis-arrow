@@ -9,6 +9,7 @@ body{
 
 #title{
 	text-align: center;
+    font-size:30px;
 	font-family: "Bebas Neue", Arial;
     -webkit-animation:colorchange 20s infinite alternate;
       
@@ -77,17 +78,58 @@ h1{
 	margin-bottom: 0px;
     
 }
+#authentication{
+    text-align: center;
+
+}
+.demo{
+     
+     display:contents;
+    -webkit-animation: rightThenLeft 4s linear;
+}
+
+@-webkit-keyframes rightThenLeft {
+    0%   {left: 0%;}
+    50%  {left: 100%;}
+    100% {left: 0%;}
+}
 .authenticaion{
     text-align: center;
 }
 h3{
-	color:chocolate;
+	color:darkblue;
 	margin-top: 0px;
 	font-size: 35px;
 }
+.button1{
+     margin-top: 15px;
+      background-color:darkorange;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+    justify-content: center;
+}
+.button2{
+     margin-top: 15px;
+      background-color:chartreuse;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+    justify-content: center;
+}
 
 #intro p{
-	color:bisque;
+	color:darkorange;
 	font-size: 25px;
 	opacity: 0.5;
 }
@@ -114,6 +156,7 @@ a.button {
      background-color: #4CAF50; /* Green */
   border: none;
   color: white;
+    
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -126,11 +169,23 @@ a.button {
     text-decoration: none;
     color: initial;
 }
-a.button:hover{
-    background-color: grey;
+a.button1:hover{
+    background-color: #C8911C;
 	color: black;
-	transition: 0.5s;
+	transition: 0.2s;
 }
+a.button2:hover{
+    background-color: #628816;
+    transition:0.2s;
+}
+#auth{
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-shadow: 2px 2px #ff0000;
+}
+
+
 
 form{
 	color: white;
@@ -138,6 +193,7 @@ form{
 	margin: auto;
 	margin-top: 10px;
 }
+
 
 .btn {
   background-color: #000; /* Green */

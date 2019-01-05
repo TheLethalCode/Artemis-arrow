@@ -1,0 +1,61 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    background: url(Hdhut.blogspot.jpg);
+    background-size: cover;
+}
+h2{
+    font-size: 40px;
+    font-family:inherit;
+}
+.box{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:400px;
+    background:rgba(0,0,0,.8);
+    padding:40px;
+    box-sizing: border-box;
+    box-shadow:0 15px 25px rgba(0,0,0,.5);
+    border-radius:10px;
+    
+}
+.box h2{
+    margin:0 0 30px;
+    padding:0;
+    color:#fff;
+    text-align: center;
+    
+    
+}
+.box.inputBox {
+    position: relative;
+    
+}
+.box .inputBox input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color:#fff;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    
+    
+}
+#forgot{color: azure;
+text-decoration: underline;}
+.submit{
+    background-color: aqua;
+    font-size: 18px;
+    width: 323px;
+    height: 45px;
+    border-radius: 10px;
+}
+.submit:hover{
+    background-color: cadetblue;
+    transition: 0.2s;
+}
