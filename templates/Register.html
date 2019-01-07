@@ -23,24 +23,24 @@
 		<form action="{{ url_for('signup') }}" method="post">
 			
 			<div class="input-div">
-				  <input class="t-input" type="text" id="FName" placeholder="First Name" required>	
-				  <input class="t-input" type="text" id="LName" placeholder="Last Name" required>	
+				  <input class="t-input" type="text" id="FName" name="firstname" placeholder="First Name" required>	
+				  <input class="t-input" type="text" id="LName" name="lastname" placeholder="Last Name" required>	
 			</div>
 
 			<div class="input-div">
-  				<input class="t-input" type="email" id="email" placeholder="Email Address" required>	
+  				<input class="t-input" type="email" id="email" name="email" placeholder="Email Address" required>	
 			</div>
 
 			<div class="input-div">
-  				<input class="t-input" type="text" id="uname" placeholder="Username" required>	
+  				<input class="t-input" type="text" id="uname" name="username" placeholder="Username" required>	
 			</div>
 				
 			<div class="input-div">
-  				<input class="t-input" type="password" id="pass" placeholder="Password" required>	
+  				<input class="t-input" type="password" id="pass" name="password" placeholder="Password" required>	
 			</div>
 
 			<div class="input-div">
-  				<input class="t-input" type="password" id="cpass" placeholder="Confirm Password" required>	
+  				<input class="t-input" type="password" id="cpass" name="conf-password" placeholder="Confirm Password" required>	
 			</div>
 
 			<div class="input-div">
