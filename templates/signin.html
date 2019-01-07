@@ -4,22 +4,43 @@
 	<title>Artemis-Arrow</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../static/css/index_styles.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/Reg.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/signin.css">
 </head>
 <body>
-    <p style="color:aliceblue">Welcome Back to Artemis Arrow. Please sign in to enter a magical world.</p>
-    <div id="login">
-				<br>
+
+<div class="container">
+	<div class="box">
+		<div id="title">
+			<div class="main-title">Artemis <span class="red-span">Arrow</span></div>
+		</div>
+
+		<div class="secondary-title">Welcome <span class="green-span">Back</span></div>
+
+		<div class="login-text"><span class="bottom-bar">the world awaits</span></div>
+
+		<div id="login">
 				<form action="{{ url_for('login') }}" method="post" >
-  					 Email:<br>
- 					 <input type="text" name="email" placeholder = "email@xyz.com" required="true">
- 					 <br><br>
-					 Password:<br>
-					 <input type="password" name="password" placeholder = "" required="true">
-					 <br><br>
-					 <button class="btn" id="login-btn">LOGIN</button>
-				</form> 
-        
+					<div class="input-div">
+						<input class="t-input" type="email" id="email" name="email" placeholder="Email Address" required>	
+					</div>
+
+					<div class="input-div">
+							<input class="t-input" type="password" id="pass" name="password" placeholder="Password" required>	
+					</div>
+
+					<div class="input-div">
+							<button type="submit" class="register-btn">sign in</button>
+					</div>
+				</form>
+
+				<div class="quote">Not all who <span class="green-span">wander</span> are lost</div>
+
+		</div>
 	</div>
+</div>
+
+<div class="home-div"> <a class="home" href="{{ url_for('main') }}">Home</a></div>
 
 	<div id = 'flashes'>
 		{% with messages = get_flashed_messages() %}
@@ -35,6 +56,5 @@
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
-	<!-- <script type="text/javascript" src="../static/js/index_script.js"></script> -->
 </body>
 </html>

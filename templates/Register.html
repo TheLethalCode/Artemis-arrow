@@ -1,36 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Artemis-Arrow</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" type="text/css" href="../static/css/index_styles.css">
     <link rel="stylesheet" type="text/css" href="../static/css/Reg.css">
 </head>
-
 <body>
-	<p style="color:azure"><strong>It seems you are new to Artemis arrow. No worries, we have got you. You can find innumerable books, movies, anime, etc here. But first, its time to register yourself with us.</strong></p>
-	<div id="register">
-		<form style="text-align: center" action="{{ url_for('signup') }}" method="post">
-				First Name:<br>
-				<input style="font-color: black" type="text" name="firstname" placeholder="firstname" required="true">
-				<br><br>
-				Last Name:<br>
-				<input type="text" name="lastname" placeholder = "lastname" required="true">
-				<br><br>
-				Email:<br>
-				<input type="text" name="email" placeholder = "Email" required="true">
-				<br><br>
-				Username:<br>
-				<input type="text" name="username" placeholder = "user_name" required="true">
-				<br><br>
-				Password:<br>
-				<input type="password" name="password" placeholder = "" id="reg-password" required="true">
-				<br><br>
-				Confirm password:<br>
-				<input type="password" name="conf-password" placeholder = "" id="reg-conf-password" required="true">
-				<br><br>
-				<button class="btn" id="register-btn">REGISTER</button>
-			<p style="text-align: center">OR</p>
+<div class="container">
+	<div class="box">
+		<div id="title">
+			<div class="main-title">Artemis <span class="red-span">Arrow</span></div>
+		</div>
+
+		<div class="intro-text">
+			It seems you are new to Artemis arrow. No worries, we have got you. You can find innumerable books, movies, anime, etc here. But first, its time to register yourself with us.	
+		</div>
+
+
+	<div id="form">
+		<form action="{{ url_for('signup') }}" method="post">
+			
+			<div class="input-div">
+				  <input class="t-input" type="text" id="FName" name="firstname" placeholder="First Name" required>	
+				  <input class="t-input" type="text" id="LName" name="lastname" placeholder="Last Name" required>	
+			</div>
+
+			<div class="input-div">
+  				<input class="t-input" type="email" id="email" name="email" placeholder="Email Address" required>	
+			</div>
+
+			<div class="input-div">
+  				<input class="t-input" type="text" id="uname" name="username" placeholder="Username" required>	
+			</div>
+				
+			<div class="input-div">
+  				<input class="t-input" type="password" id="pass" name="password" placeholder="Password" required>	
+			</div>
+
+			<div class="input-div">
+  				<input class="t-input" type="password" id="cpass" name="conf-password" placeholder="Confirm Password" required>	
+			</div>
+
+			<div class="input-div">
+				<button type="submit" class="register-btn">Register</button>
+			</div>
 
 			<button class="loginBtn loginBtn--facebook">
   				Login with Facebook
@@ -41,7 +56,11 @@
 			</button>
 		</form> 
 	</div>
-	
+	</div>
+</div>
+
+<div class="home-div"> <a class="home" href="{{ url_for('main') }}">Home</a></div>
+
 	<div id = 'flashes'>
 		{% with messages = get_flashed_messages() %}
 		   {% if messages %}
@@ -56,7 +75,6 @@
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
-	<!-- <script type="text/javascript" src="../static/js/index_script.js"></script> -->
 
 </body>
 </html>

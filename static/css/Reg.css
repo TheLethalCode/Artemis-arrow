@@ -1,5 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400');
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(0,0,0,0.95) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.intro-text{
+  padding-bottom: 1rem;
+}
+
+.register-btn{
+  background-color: #000;
+  color: #811212;
+  padding: .6rem;
+  width: 150px;
+  border: 1px solid #811212;
+  font-family: 'Staatliches';
+  font-size: 1.2rem;
+}
+
+.register-btn:hover{
+  background-color: #811212;
+  color: #000;
+  border: 1px solid #000;
+}
+
+
+.t-input{
+  font-family: inherit;
+  font-size: inherit;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1.5px solid #fff;
+  color: #fff;
+  padding-bottom: 3px;
+}
+
+.t-input:focus{
+  border-bottom-color: #811212;
+  transition: 0.3s;
+}
+
+.t-input:valid{
+  border-bottom-color:  #15833a;
+  transition: 0.3s;
+}
+
+.t-input:invalid{
+  font-weight: 400;
+  color: #811212;
+  transition: 0.3s;
+}
+
+#FName, #LName{
+  display: inline-block;
+  width: 49% !important;
+}
+
+.input-div{
+  width: 300px;
+  margin: 0 auto;
+  font-size: 1rem;
+  font-family: 'Raleway';
+  padding: 0.8rem;
+}
+
 /* Shared */
 .loginBtn {
+  font-family: 'Raleway'; 
   box-sizing: border-box;
   position: relative;
   /* width: 13em;  - apply for fixed size */
@@ -13,15 +86,7 @@
   font-size: 16px;
   color: #FFF;
 }
-#register-btn{
-    color:aqua;
-    background-color: crimson;
-}
-#register-btn:hover{
-    background-color: darkkhaki;
-    transition: 1s;
-}
- 
+
 
 .loginBtn:before {
   content: "";
@@ -70,4 +135,29 @@
 .loginBtn--google:hover,
 .loginBtn--google:focus {
   background: #E74B37;
+}
+
+@media (max-width: 700px){
+  .input-div{
+    width: 90%;
+  }
+
+  #form{
+    margin-bottom: 1rem;
+  }
+}
+
+.home-div{
+  width: 100px;
+  margin: 0 auto;
+}
+
+.home{
+  font-family: 'Staatliches';
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: block;
+  margin: 1rem;
 }
