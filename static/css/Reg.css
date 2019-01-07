@@ -1,56 +1,18 @@
+/* Shared */
 body{
-    background-image: url(css/f2.jpg);
+    background-image:url(../images/fortnite-battle-royale_938.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    color:#180B48;
 }
-#register{
+h1{
+    margin-left:600px;
+    font-size:40px;  
+}
+p{
     text-align: center;
-    margin:100px 400px;
-}
-#registration{
-    position: absolute;
-    top:65%;
-    left:50%;
+    font-size:18px;
     
-    transform:translate(-50%,-50%);
-    width:400px;
-    background:rgba(0,0,0,.8);
-    padding:40px;
-    box-sizing: border-box;
-    box-shadow:0 15px 25px rgba(0,0,0,.5);
-    border-radius:10px;
-   
-   
-}
-#button{
-    width:230px;
-    height:26px;
-    border: none;
-    border-bottom: 2px solid;
-    border-color: #AD8D49;
-}
-
-h2{
-    font-size:40px;
-    color:#B77E2B;
-    text-decoration: underline;
-    
-}
-.or{
-    text-align: center ;color:#DFA95B
-}
-.butt{
-    width:240px;
-    height:40px;
-    border-radius: 6px;
-   border-color:#6FC030;
-    background-color: #6FC030;
-    
-}
-.butt:hover{
-    border-color:#AB8543;
-    background-color: #AB8543;
-    transition:0.2s;
 }
 .loginBtn {
   box-sizing: border-box;
@@ -66,6 +28,20 @@ h2{
   font-size: 16px;
   color: #FFF;
 }
+#register-btn{
+    color:aqua;
+    background-color: crimson;
+}
+#register-btn:hover{
+    background-color: darkkhaki;
+    transition: 1s;
+}
+h1{
+    color:#0B1E72;
+    
+}
+ 
+
 .loginBtn:before {
   content: "";
   box-sizing: border-box;
@@ -74,6 +50,10 @@ h2{
   left: 0;
   width: 34px;
   height: 100%;
+}
+h2{
+    color:aqua;
+    
 }
 .loginBtn:focus {
   outline: none;
@@ -98,7 +78,6 @@ h2{
 .loginBtn--facebook:focus {
   background-color: #5B7BD5;
   background-image: linear-gradient(#5B7BD5, #4864B1);
-    transition:0.2s;
 }
 
 
@@ -113,5 +92,14 @@ h2{
 }
 .loginBtn--google:hover,
 .loginBtn--google:focus {
-  background: #F02626;
-    transition:0.2s;}
+  background: #E74B37;
+}
+input{
+    border: none;
+    border-bottom: 2px;
+    
+}
+.btn{
+    font-size:20px;
+    
+}

@@ -1,0 +1,273 @@
+body{
+	background: url("../images/bg2.jpg")repeat 0 0;
+	background-color:firebrick;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+h1{
+    text-align: center;
+	font-family: "Bebas Neue", Arial;
+    margin-left:50px;
+    -webkit-animation:colorchange 20s infinite alternate;
+      
+      
+    }
+
+    @-webkit-keyframes colorchange {
+      0% {
+        
+        color: blue;
+      }
+      
+      10% {
+        
+        color: #8e44ad;
+      }
+      
+      20% {
+        
+        color: #1abc9c;
+      }
+      
+      30% {
+        
+        color: #d35400;
+      }
+      
+      40% {
+        
+        color: blue;
+      }
+      
+      50% {
+        
+        color: #34495e;
+      }
+      
+      60% {
+        
+        color: blue;
+      }
+      
+      70% {
+        
+        color: #2980b9;
+      }
+      80% {
+     
+        color: #f1c40f;
+      }
+      
+      90% {
+     
+        color: #2980b9;
+      }
+      
+      100% {
+        
+        color: pink;
+      }
+    }
+    
+
+
+h3{
+    text-align: center;
+    color:blueviolet;
+}
+h2{
+    text-align: center;
+    color:#62C746;
+}
+#selection{
+    padding-left: 600px;
+    margin:0;
+   color:chocolate;
+    
+}
+
+
+#book-btn{
+    background-color: chocolate;
+    font-size: 30px;
+    padding:2px;
+    margin:2px;
+    
+}
+#book-btn:hover{
+    background-color: crimson;
+    transition:0.2s;
+}
+#song-btn{
+    background-color:aqua;
+    font-size: 30px;
+    padding:2px;
+    margin:4px;
+    
+}
+#song-btn:hover{
+    background-color:cadetblue;
+    transition:0.2s;
+}#anime-btn{
+    background-color:chartreuse;
+    font-size: 30px;
+    padding:2px;
+    margin:4px;
+    
+}
+#anime-btn:hover{
+    background-color:forestgreen;
+    transition:0.2s;
+}
+
+nav{
+	float: right;
+    
+}
+#logout-btn{
+    font-size:25px;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 40%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+    transition:0.2s;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+}
+.container{
+	margin:auto;
+	padding:auto;
+	 
+	color: white;
+	text-align: center;
+	height: 100vh;
+}
+
+.title{
+	color:#3EDF67;
+	text-align: center;
+	padding-top: 10px;
+	font-family: "Bebas Neue", Arial;
+}
+
+.section-title{
+	color:#3EDF67;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 100px;
+	font-weight: bold;
+	width: 100vw;
+}
+li{
+	list-style: none;
+	padding: auto;
+	margin: auto;
+}
+.watch-later,.most-popular{
+	margin-top: 30px;
+}
+li i{
+	float:right;
+	margin-right: 30px;
+    color:#ABF00C;
+}
+
+.card{
+	display: block;
+	width: 60%;
+	max-width: 400px;
+	margin: auto;
+	margin-top: 25px;
+	border:2px solid white;
+	border-radius: 3%;
+	font-weight: bold;
+    color:#EDBC38;
+}
+
+#logout-btn{
+	margin-right: 10px;
+    color: darkkhaki;
+}
+
+.btn {
+  background-color:crimson; 
+  border: none;
+  color: white;
+  margin: auto;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 5px;
+  display: block;
+  font-size: 16px;
+  border-radius: 5%;
+}
+.search-box{
+    margin-left:60px;
+}
+
+.btn:hover {
+	background-color: grey;
+	color: black;
+	transition: 0.5s;
+
+}
+.section-title{
+    margin-left:60px;
+    color:#3EDF67;
+}
+#upload-files{
+    text-align: center;
+    
+}
+.gbtn{
+    background-color: #38C8EC;
+    border-radius: 10px;
+    
+}
+.gbtn:hover{
+    background-color: #1B6F9C;
+    transition:0.2s;
+}
+h4{
+    color:#DFC23E;
+    font-size: 23px;
+    
+}
+

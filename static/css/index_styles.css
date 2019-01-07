@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Staatliches|Thasadith:400,700');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.red-span{
+  color: #9e1818;
+}
+
+body{
+  background:url("../images/bg2.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+
+  max-height: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.box{
+  background-color: rgba(0,0,0,0.7); 
+  width: 600px;
+  height: 620px;
+  border: 1px solid #fff;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+}
+
+.main-title{
+  font-family: 'Staatliches';
+  font-size: 3rem;
+  padding-top: 2.5rem;
+}
+
+.second-title{
+  font-family: 'Amatic SC';
+  font-size: 2.5rem;
+}
+
+.intro-text{
+  font-family: 'Thasadith';
+  font-size: 1.2rem;
+  padding: 2rem;
+}
+
+#auth{
+  font-weight: 700;
+  font-size: 1.6rem;
+  font-family: 'Thasadith';
+  margin-bottom: 20px;
+}
+
+.button{
+  display: block;
+  background-color: #811212;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  /*border: 0.5px solid #fff;*/
+  width: 150px;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-family: 'Staatliches';
+  letter-spacing: 0.5px;
+}
+
+.button:hover{
+  background: rgba(129, 18, 18, 0.6);
+}
+
+.icon img{
+  width: 40px;
+}
+
+.icon:hover{
+  opacity: 0.6;
+}
+
+@media (max-width: 700px){
+
+  body{
+    height: 100%;
+    overflow: scroll;
+  }
+
+  .box{
+    width: 80%;
+    height: auto;
+    padding-bottom: 1rem;
+  }
+
+  .intro-text{
+    font-size: 1rem;
+  }
+
+  .icon img{
+    margin-bottom: 1rem;
+  }
+
+  .main-title{
+    font-size: 2.5rem;
+  }
+  
+  .second-title{
+    font-size: 2rem;
+  }
+}
+
+@media (max-height: 850px) and (min-height: 701px){
+  body{
+    height: 100vh;
+    max-height: 100%;
+  }
+}

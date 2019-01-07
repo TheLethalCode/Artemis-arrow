@@ -3,43 +3,62 @@
 <head>
 	<title>Artemis-Arrow</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-    <link rel="stylesheet" type="text/css" href="../static/Reg.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/index_styles.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/Reg.css">
 </head>
-    <body>
-       
-        <div id="register">
-            <h2>Register</h2>
-            
-				<form id="registration">
-  					<input type="text" name="fname" id="button" placeholder="Firstname"><br><br>
-                    <input type="text" name="lname" id="button" placeholder="Lastname"><br><br>
-                    <input type="email" name="umail" id="button" placeholder="Email ID"><br><br>
-                    <input type="text" name="username" id="button" placeholder="Username"><br><br>
-                    <input type="password" name="pword" id="button" placeholder="Password"><br><br>
-                    <input type="password" name="pwd" id="button" placeholder="Confirm Password"><br><br>
-                    <input class="butt" type="submit" value="Register" >
-                    <p class="or">OR</p>
-                    <button class="loginBtn loginBtn--facebook">
-  Login with Facebook
-</button>
 
-<button class="loginBtn loginBtn--google">
-  Login with Google
-</button>
-                    </form> 
-                 
-				
-			</div>
-		
+<body >
+    <h1>Register</h1>
+	<p style="color:azure"><strong>It seems you are new to Artemis arrow. No worries, we have got you. You can find innumerable books, movies, anime, etc here. But first, its time to register yourself with us.</strong></p>
+	<div id="register">
+		<form style="text-align: center" action="{{ url_for('signup') }}" method="post">
+				First Name:<br>
+				<input style="font-color: black" type="text" name="firstname" placeholder="firstname" required="true">
+				<br><br>
+				Last Name:<br>
+				<input type="text" name="lastname" placeholder = "lastname" required="true">
+				<br><br>
+				Email:<br>
+				<input type="text" name="email" placeholder = "Email" required="true">
+				<br><br>
+				Username:<br>
+				<input type="text" name="username" placeholder = "user_name" required="true">
+				<br><br>
+				Password:<br>
+				<input type="password" name="password" placeholder = "" id="reg-password" required="true">
+				<br><br>
+				Confirm password:<br>
+				<input type="password" name="conf-password" placeholder = "" id="reg-conf-password" required="true">
+				<br><br>
+				<button class="btn" id="register-btn">REGISTER</button>
+			<h2 style="text-align: center">OR</h2>
 
-		<div id="selection"> 
+			<button class="loginBtn loginBtn--facebook">
+  				Login with Facebook
+			</button>
+
+			<button class="loginBtn loginBtn--google">
+  				Login with Google
+			</button>
+		</form> 
+	</div>
 	
+	<div id = 'flashes'>
+		{% with messages = get_flashed_messages() %}
+		   {% if messages %}
+			  {% for message in messages %}
+				 {{ message }}
+			  {% endfor %}
+		   {% endif %}
+		{% endwith %}
+	</div>
+
 	<script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
-	<script type="text/javascript" src="../js/index_script.js"></script>
+	<!-- <script type="text/javascript" src="../static/js/index_script.js"></script> -->
+
 </body>
 </html>
     

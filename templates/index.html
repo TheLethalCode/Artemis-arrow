@@ -1,51 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Artemis-Arrow</title>
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="../static/index_styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../static/animate.css">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Artemis-Arrow</title>
+	<link rel="stylesheet" type="text/css" href="../static/css/index_styles.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/index_only.css">>
 </head>
 <body>
-    
 	<div class="container">
-		<div id="title">
-
-			<h1>ARTEMIS ARROW</h1>
-			<h3>-HUNT FROM WEB-</h3>
-		</div>
-		<div id="intro">
-			<p class="WOW bounce demo">
-			   Tired  of looking in different places for a variety of different entertainment? Yep, we have been there, done that! That's why, we introduce you to Artemis Arrow. Artemis is the Greek goddess of hunt. There has never been a history of her arrow ever missing. Anything you need, Artemiss' arrow will race towards it in the humongous hub (i.e internet) and bring it to you without fail.
-			</p>
-		</div>
-
-		<div id="authentication">
-			<p id="auth"><strong>Before Proceding kindly authenticate!!!</strong></p>
-             <a href="Register.html"class="button1"  >Register</a><p style="color:#1F8BEB">OR</p>
-             <a href="signin.html"class="button2" id="signin">Signin</a>
-			
-		</div>
-
-		<div id="selection"> 
-			<div id="book">
-				<button id="book-btn">books</button>
+		<div class="box">
+			<div id="title">
+				<div class="main-title">Artemis <span class="red-span">Arrow</span></div>
+				<div class="second-title">Hunt from the Web</div>
 			</div>
-			<div id="songs">
-				<button id="song-btn">songs</button>
+			<div class="intro-text">
+				Tired of looking in different places for a variety of entertainment? Yep, we have been there! That's why, we introduce you to Artemis Arrow. Artemis is the Greek goddess of hunt. There has never been a history of her arrow ever missing. Anything you need, The Arrow of Artemis will race towards it in the colossal hub of Internet and bring it to you without fail.
 			</div>
-			<div id="anime">
-				<button id="anime-btn">anime</button>
+
+			<div id="authentication">
+				<div id="auth">Get Started</div>
+				<a href="{{ url_for('signup') }}" class="button">Register</a>
+				<a href="{{ url_for('login') }}" class="button">Sign in</a>
 			</div>
+
+			<a target="blank" href="https://github.com/TheLethalCode/Artemis-arrow" class="icon">
+				<img src="../static/images/icons8-octocat-filled-480.png" alt="">
+			</a>
 		</div>
 	</div>
+
+	<div id='flashes'>
+		{% with messages = get_flashed_messages() %}
+		   {% if messages %}
+			  {% for message in messages %}
+				 {{ message }}
+			  {% endfor %}
+		   {% endif %}
+		{% endwith %}
+	</div>
+
 	<script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
-	<script type="text/javascript" src="../js/index_script.js"></script>
-    <script type="text/javascript" src="../static/js/wow.js"></script>
-    <script> new WOW().init();</script>
+	
 </body>
 </html>
