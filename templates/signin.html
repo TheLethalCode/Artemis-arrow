@@ -3,30 +3,32 @@
 <head>
 	<title>Artemis-Arrow</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="../static/css/index_styles.css">
-	<link rel="stylesheet" type="text/css" href="../static/css/Reg.css">
+	
+	
 	<link rel="stylesheet" type="text/css" href="../static/css/signin.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
-
+<div class="home-div"> <a class="home" href="{{ url_for('main') }}">Home</a></div>
 <div class="container">
 	<div class="box">
 		<div id="title">
 			<div class="main-title">Artemis <span class="red-span">Arrow</span></div>
 		</div>
 
-		<div class="secondary-title">Welcome <span class="green-span">Back</span></div>
+		<div class="secondary-title">Welcome <span class="violet-span">Back</span></div>
 
-		<div class="login-text"><span class="bottom-bar">the world awaits</span></div>
+		<div class="login-text"><span class="bottom-bar">The World awaits</span></div>
 
 		<div id="login">
 				<form action="{{ url_for('login') }}" method="post" >
 					<div class="input-div">
-						<input class="t-input" type="email" id="email" name="email" placeholder="Email Address" required>	
+						<i class="fas fa-user"></i><input class="t-input" type="email" id="email" name="email" placeholder="Username" required>	
 					</div>
+                    <br>
 
 					<div class="input-div">
-							<input class="t-input" type="password" id="pass" name="password" placeholder="Password" required>	
+						<i class="fas fa-key"></i></i>	<input class="t-input" type="password" id="pass" name="password" placeholder="Password" required>	
 					</div>
 
 					<div class="input-div">
@@ -40,7 +42,7 @@
 	</div>
 </div>
 
-<div class="home-div"> <a class="home" href="{{ url_for('main') }}">Home</a></div>
+
 
 	<div id = 'flashes'>
 		{% with messages = get_flashed_messages() %}

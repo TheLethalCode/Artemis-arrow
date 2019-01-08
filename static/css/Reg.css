@@ -1,17 +1,23 @@
 /* Shared */
 body{
-    background-image:url(../images/fortnite-battle-royale_938.jpeg);
+   background-image:url(../images/2014_Koenigsegg_Agera_One_Car_Vehicle_Sport_Supercar_Sportcar_Supersport_4000x3000__6__4000x3000.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color:#180B48;
 }
 h1{
-    margin-left:600px;
-    font-size:40px;  
+    margin-left:580px;
+    font-size:50px; 
+    text-decoration: underline;
+    color:#294499  ;
+    
 }
 p{
     text-align: center;
     font-size:18px;
+    font-size:25px;
+    color:azure;
+    
     
 }
 .loginBtn {
@@ -34,12 +40,10 @@ p{
 }
 #register-btn:hover{
     background-color: darkkhaki;
-    transition: 1s;
+    color:#6D2999  ;
+    transition: 0.2s;
 }
-h1{
-    color:#0B1E72;
-    
-}
+
  
 
 .loginBtn:before {
@@ -90,16 +94,23 @@ h2{
   border-right: #BB3F30 1px solid;
   background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_google.png') 6px 6px no-repeat;
 }
-.loginBtn--google:hover,
-.loginBtn--google:focus {
-  background: #E74B37;
-}
+
+
 input{
     border: none;
     border-bottom: 2px;
+    height: 40px;
     
 }
 .btn{
-    font-size:20px;
+    font-size:25px;
+    
+}
+input{
+    border-radius:8px;
+    color:darkcyan;
+    border:none;
+    border-bottom: 3px solid;
+    width:250px;
     
 }
