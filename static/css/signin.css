@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Staatliches|Thasadith:400,700');
 body{
-    background-image: url(../images/Cave_558250_3840x2400.jpg);
+    background-image: url(../images/markus-spiske-666905-unsplash.jpg);
         background-size: cover;
     background-repeat: no-repeat;
     
@@ -7,41 +8,65 @@ body{
 .login-text{
     font-weight: bold;
     font-family: monospace;
-    color:#F36A7D;
+    color:rgb(58, 151, 29);
     
         
 }
+.world{
+    color:azure;
+}
+.box{
+    ;
+}
 i{
-    color:#3887E5;
+    color:#F36A7D;
     font-size:25px;
 }
 
 .container{
     text-align: center;
-    border-top:25%;
-    margin-top:120px;
+    
+    margin-top:10px;
 }
 .violet-span{
    
-color:#AA2ADA
+color:rgb(58, 151, 29);
 }
 .green-span{
-    color:#76F144;
+    color:darkgray;
 }
 .red-span{
-    color:#D1473C;
+    color:azure;
 }
 .secondary-title{
     font-size: 40px;
     font-weight: bold;
-    color:#EEF114;
+    color:azure;
+    font-family: 'Josefin Sans';
 }
+
+
+  .container{
+      top:25%;
+      padding:10px;
+  background-color: rgba(0,0,0,0.7); 
+  width: 600px;
+  height: 620px;
+  border: 1px solid #fff;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+}
+
 .main-title{
-    margin-left:75px;
+    
     font-size: 60px;
-    font-weight: bolder;
-    color:#6EDA23;
-    text-decoration: underline;
+    font-weight:900;
+    color:rgb(58, 151, 29);
+    
+    font-family:'Anton';
     
 }
 
@@ -52,7 +77,7 @@ color:#AA2ADA
     padding: 1rem;
     margin-bottom: 1rem;
     font-weight: bold;
-    color:#31718E   ;
+    color:cornflowerblue  ;
 }
 .t-input{
     height:25px;
@@ -64,11 +89,12 @@ color:#AA2ADA
   margin-top: 1.5rem;
   background-color: #000;
   color: rgb(58, 151, 29);
-  border: 1px solid rgb(58, 151, 29);
-  font-family: 'Staatliches';
-  font-size: 1.4rem;
+  border: 1px solid ;
+  font-family:  'Josefin Sans';
+  font-size: 1.3rem;
     width:110px;
     height:40px;
+    border-radius: 10px;
 }
 
 .register-btn:hover{
@@ -79,16 +105,14 @@ color:#AA2ADA
   }
 
 .login-text{
-    font-family: 'Raleway';
+    font-family: 'Righteous';
     font-size: 1.5rem;
     text-align: center;
     margin-top: 4rem;
     margin-bottom: 2.5rem;
 }
 
-.bottom-bar{
-    position: relative;
-}
+
 
 .bottom-bar::after{
     display: block;
@@ -99,6 +123,7 @@ color:#AA2ADA
     position: absolute;
     bottom: -10px;
     left: 0;
+    font-family:'Righteous';
 }
 
 @media (max-width: 700px){
