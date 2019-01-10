@@ -1,0 +1,98 @@
+body{
+    background-image:url("../images/Naruto_robot______g_1280x719.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.search{
+    font-size: 20px;
+    margin-left:980px;
+    opacity:0.5;
+    padding:0;
+    border-color:#fff;
+    position:sticky;
+    border-radius:7px;
+    text-decoration: underline solid 2px #fff;
+}
+.search:hover{
+    font-size:20px;
+    opacity:0.7;
+    transition:0.2s;
+   
+    
+}
+i{
+    color:white;
+}
+.search1{
+    font-size:20px;
+    
+    opacity:0.6;
+    border-color:#000;
+    border-radius:10px;
+}
+.search1:hover{
+    opacity:1;
+}
+.logout{
+    font-size:12px;
+    background-color:darkblue;
+    color: azure;
+    padding:9px;
+    border-color:darkblue;
+     border-radius: 7px;
+}
+.logout:hover{
+    background-color:#0859FA;
+    transition:0.2s
+}
+.fmab{
+    font-size:80px;
+    margin-left:950px;
+    margin-top:10px;
+}
+h2{
+    margin-left:620px;
+    color:#1C2833;
+    font-size:40px;
+    margin-right:557px;
+        border:2px solid #1C2833;
+    font-family:'Varela Round';
+}
+.naruto{
+    font-size:40px;
+}
+.more{
+    color:black;
+    font-size:23px;
+    
+}
+.more:hover{
+    color:white;
+    transition: 0.2s;
+}
+.cov{
+    margin-left:350px;
+    margin-right:340px;
+    border:3px solid #5D6D7E;
+    opacity:0.6;
+}
+.btn{
+    margin-left:100px;
+    margin:30px;
+    font-size:20px;
+    border-radius:10px;
+    font-family:'ZCOOL KuaiLe';
+    opacity:0.7;
+}
+.btn:hover{
+    color:#5D6D7E;
+    background-color:#34495E;
+    transition:0.2s;
+}
+i{
+    color:black;
+}
+i:hover{
+    color:#5D6D7E;
+    transition:0.2s;
+}

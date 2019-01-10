@@ -12,6 +12,10 @@ body{
     
         
 }
+.home{
+    color:black;
+    
+}
 .world{
     color:azure;
 }
@@ -19,7 +23,7 @@ body{
     ;
 }
 i{
-    color:#F36A7D;
+    color:rgb(58, 151, 29);
     font-size:25px;
 }
 
@@ -100,7 +104,7 @@ color:rgb(58, 151, 29);
 .register-btn:hover{
     background-color: rgb(58, 151, 29);
     color: #000;
-    border: 1px solid #000;
+    border: 1px;
     transition:0.2s;
   }
 
@@ -135,7 +139,7 @@ color:rgb(58, 151, 29);
 .home-div{
     font-size:25px;
     float:right;
-    background-color:chartreuse;
+    background-color:rgb(58, 151, 29);
 }
 .t-input{
     overflow:hidden;
@@ -144,6 +148,6 @@ color:rgb(58, 151, 29);
     margin:8px;
    border-radius: 10px;
     border:none;
-    border-bottom: 3px solid #5DBB28;  
+    
 }
 

@@ -1,13 +1,32 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet"type="text/css" href="../static/css/anime_css.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=Coda+Caption:800|Shrikhand|Varela+Round|ZCOOL+KuaiLe" rel="stylesheet">
     <title>Songs</title>
 </head>
 <body>
-    {% for item in results %}
+   
+            <div class="bg">
+  <input type="text" class="search" placeholder="Let's find something..."> <button type="submit" class="search1"><i class="fas fa-search"></i></button>
+        <button type="submit"class="logout">Logout</button>
+                 {% for item in results %}
         <li><a href="{{ item.link }}">{{ item.name }}</a></li>
     {% endfor %}
+                <h2>Popular</h2>
+    
+    <input type="image" src="../static/images/naruto.jpg"alt="Naruto"class="naruto">
+                 <input type="image" src="../static/images/dbz.jpg"alt="Dragon Ball Z"class="dbz">
+                <a href="#"class="more">And more....</a><br><br><br>
+                <div class="cov">
+                <button type="submit" class="btn"><i class="fas fa-film"></i> Categories</button>
+                <button type="submit" class="btn"><i class="fas fa-play-circle"></i> Recents</button>
+                <button type="submit" class="btn"><i class="fas fa-forward"></i> Watch Later</button></div>
+                
+                        
+</div>
 </body>
 </html>

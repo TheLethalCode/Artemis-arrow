@@ -16,7 +16,7 @@ h2{
     color:#1FA257;
     font-family:'Khand' ;
     font-size:70px;
-    font
+    
 }
 .btun{
     text-align: center;
@@ -34,8 +34,9 @@ h2{
     font-size:22px;
     border-radius:50px;
     background-color: black;
-    color:azure
-   
+    color:azure;
+        padding:8px;
+   font-family: 'Righteous';
 }
 .btn:hover{
     background-color: #C70039;
@@ -47,4 +48,39 @@ i{
 }
 .fas fa-play{
     font-size:2px;
+}
+.search{
+    font-size: 20px;
+    margin-left:980px;
+    opacity:0.5;
+    padding:0;
+    border-color:#fff;
+    position:sticky;
+    border-radius:7px;
+    text-decoration: underline solid 2px #fff;
+}
+.search:hover{
+    font-size:20px;
+    opacity:0.7;
+    transition:0.2s;
+   
+    
+}
+.search1{
+    font-size:20px;
+    background-color:black;
+    opacity:0.6;
+    border-color:#000;
+    border-radius:10px;
+}
+.search1:hover{
+    opacity:1;
+}
+.logout{
+    font-size:12px;
+    background-color:#FA6708;
+    color: azure;
+    padding:9px;
+    border-color: black;
+     border-radius: 7px;
 }
