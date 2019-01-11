@@ -1,10 +1,77 @@
-.secondary-title{
-    font-family: 'Staatliches';
-    font-size: 2rem;
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Staatliches|Thasadith:400,700');
+body{
+    background-image: url(../images/markus-spiske-666905-unsplash.jpg);
+        background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.login-text{
+    font-weight: bold;
+    font-family: monospace;
+    color:rgb(58, 151, 29);
+    
+        
+}
+.home{
+    color:black;
+    
+}
+.world{
+    color:azure;
+}
+.box{
+    ;
+}
+i{
+    color:rgb(58, 151, 29);
+    font-size:25px;
 }
 
+.container{
+    text-align: center;
+    
+    margin-top:10px;
+}
+.violet-span{
+   
+color:rgb(58, 151, 29);
+}
 .green-span{
-    color: rgb(58, 151, 29);
+    color:darkgray;
+}
+.red-span{
+    color:azure;
+}
+.secondary-title{
+    font-size: 40px;
+    font-weight: bold;
+    color:azure;
+    font-family: 'Josefin Sans';
+}
+
+
+  .container{
+      top:25%;
+      padding:10px;
+  background-color: rgba(0,0,0,0.7); 
+  width: 600px;
+  height: 620px;
+  border: 1px solid #fff;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+}
+
+.main-title{
+    
+    font-size: 60px;
+    font-weight:900;
+    color:rgb(58, 151, 29);
+    
+    font-family:'Anton';
+    
 }
 
 .quote{
@@ -13,34 +80,42 @@
     font-family: 'Amatic SC';
     padding: 1rem;
     margin-bottom: 1rem;
+    font-weight: bold;
+    color:cornflowerblue  ;
+}
+.t-input{
+    height:25px;
+    border: none;
+    border-bottom: 5px;
 }
 
 .register-btn{
   margin-top: 1.5rem;
   background-color: #000;
   color: rgb(58, 151, 29);
-  border: 1px solid rgb(58, 151, 29);
-  font-family: 'Staatliches';
-  font-size: 1.4rem;
+  border: 1px solid ;
+  font-family:  'Josefin Sans';
+  font-size: 1.3rem;
+    width:110px;
+    height:40px;
+    border-radius: 10px;
 }
 
 .register-btn:hover{
     background-color: rgb(58, 151, 29);
     color: #000;
-    border: 1px solid #000;
+    border: 1px;
+    transition:0.2s;
   }
 
 .login-text{
-    font-family: 'Raleway';
+    font-family: 'Righteous';
     font-size: 1.5rem;
     text-align: center;
     margin-top: 4rem;
     margin-bottom: 2.5rem;
 }
 
-.bottom-bar{
-    position: relative;
-}
 
 .bottom-bar::after{
     display: block;
@@ -51,6 +126,7 @@
     position: absolute;
     bottom: -10px;
     left: 0;
+    font-family:'Righteous';
 }
 
 @media (max-width: 700px){
@@ -59,3 +135,18 @@
       height: 100vh;
     }
 }
+.home-div{
+    font-size:25px;
+    float:right;
+    background-color:rgb(58, 151, 29);
+}
+.t-input{
+    overflow:hidden;
+    font-size: 13px;
+    padding:8px;
+    margin:8px;
+   border-radius: 10px;
+    border:none;
+    
+}
+

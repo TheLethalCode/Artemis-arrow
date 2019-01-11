@@ -1,0 +1,86 @@
+body{
+    background-image: url(../images/dark-rider-42019-unsplash.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+h2{
+    color:azure;
+    float:left;
+}
+.main-title{
+    font-size:30px;
+    font-family:'Khand';
+    font-weight:lighter;
+}
+.white{
+    color:#1FA257;
+    font-family:'Khand' ;
+    font-size:70px;
+    
+}
+.btun{
+    text-align: center;
+    
+    float:left;
+    margin-left:90px;
+    align-items: stretch;
+    margin-right: 760px;
+    margin-top: 100px
+}
+.btn{
+    overflow: hidden;
+    margin:15px;
+    text-align: center;
+    font-size:22px;
+    border-radius:50px;
+    background-color: black;
+    color:azure;
+        padding:8px;
+   font-family: 'Righteous';
+}
+.btn:hover{
+    background-color: #C70039;
+    transition:0.5s;
+        text
+}
+i{
+    color:azure;
+}
+.fas fa-play{
+    font-size:2px;
+}
+.search{
+    font-size: 20px;
+    margin-left:980px;
+    opacity:0.5;
+    padding:0;
+    border-color:#fff;
+    position:sticky;
+    border-radius:7px;
+    text-decoration: underline solid 2px #fff;
+}
+.search:hover{
+    font-size:20px;
+    opacity:0.7;
+    transition:0.2s;
+   
+    
+}
+.search1{
+    font-size:20px;
+    background-color:black;
+    opacity:0.6;
+    border-color:#000;
+    border-radius:10px;
+}
+.search1:hover{
+    opacity:1;
+}
+.logout{
+    font-size:12px;
+    background-color:#FA6708;
+    color: azure;
+    padding:9px;
+    border-color: black;
+     border-radius: 7px;
+}

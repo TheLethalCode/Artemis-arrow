@@ -1,58 +1,24 @@
 body{
+<<<<<<< HEAD:static/css/profile_styles.css
 	background: url("../images/container-bg.png")repeat 0 0;
+=======
+	background: url("../images/AUTUMN_fall_tree_forest_landscape_nature_leaves_1920x1280.jpg")repeat 0 0;
+>>>>>>> 7a52c9e8e88002a6324351855a92fe7603cad827:static/css/profile_styles.css
 	background-color:firebrick;
     background-repeat: no-repeat;
-    background-size: cover;
+    
+    
 
-}
-
-nav{
-	float: right;
-}
-* {
-  box-sizing: border-box;
-}
-
-/* Style the search field */
-form.example input[type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float: left;
-  width: 40%;
-  background: #f1f1f1;
-}
-
-/* Style the submit button */
-form.example button {
-  float: left;
-  width: 20%;
-  padding: 10px;
-  background: #2196F3;
-  color: white;
-  font-size: 17px;
-  border: 1px solid grey;
-  border-left: none; /* Prevent double borders */
-  cursor: pointer;
-}
-
-form.example button:hover {
-  background: #0b7dda;
-}
-
-/* Clear floats */
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-  
 }
 h1{
     text-align: center;
 	font-family: "Bebas Neue", Arial;
+    margin-left:50px;
     -webkit-animation:colorchange 20s infinite alternate;
-      
+    font-family:fantasy;
+    height:60px;
+    font-size: 50px;  
+    font-family:'Righteous';
       
     }
 
@@ -114,6 +80,106 @@ h1{
     
 
 
+h3{
+    text-align: center;
+    color:#E8E5E5;
+    font-family:
+}
+h2{
+    text-align: center;
+    color:#62C746;
+}
+#selection{
+    padding-left: 600px;
+    margin:0;
+   color:chocolate;
+    
+}
+
+
+#book-btn{
+    background-color:#7D4B12 ;
+    font-size: 30px;
+    
+    margin:2px;
+    border-radius:60px;
+    
+}
+#book-btn:hover{
+    background-color: ;
+    transition:0.2s;
+}
+#song-btn{
+    background-color:#7D4B12;
+    font-size: 30px;
+    padding:2px;
+    margin:4px;
+     border-radius:60px;
+}
+#song-btn:hover{
+    background-color:cadetblue;
+    transition:0.2s;
+}#anime-btn{
+    background-color:#7D4B12;
+    font-size: 30px;
+    padding:2px;
+    margin:4px;
+     border-radius:60px;
+}
+#anime-btn:hover{
+    background-color:forestgreen;
+    transition:0.2s;
+}
+
+nav{
+	float: right;
+    
+}
+#logout-btn{
+    font-size:25px;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 70%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+    transition:0.2s;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
 }
 .container{
 	margin:auto;
@@ -125,14 +191,14 @@ h1{
 }
 
 .title{
-	color:dodgerblue;
+	color:#3EDF67;
 	text-align: center;
 	padding-top: 10px;
 	font-family: "Bebas Neue", Arial;
 }
 
 .section-title{
-	color:rgb(104,184,215);
+	color:#3EDF67;
 	font-size: 30px;
 	text-align: center;
 	padding-top: 100px;
@@ -150,6 +216,7 @@ li{
 li i{
 	float:right;
 	margin-right: 30px;
+    color:#ABF00C;
 }
 
 .card{
@@ -161,25 +228,43 @@ li i{
 	border:2px solid white;
 	border-radius: 3%;
 	font-weight: bold;
-    color:coral;
+    color:#EDBC38;
 }
 
 #logout-btn{
 	margin-right: 10px;
     color: darkkhaki;
+    margin-bottom: 1000px;
+    border-radius: 5%;
+    font-size:70px;
+}
+.btn{
+    font-size:25px;
+    
 }
 
-.btn {
-  background-color:crimson; 
-  border: none;
-  color: white;
-  margin: auto;
-  margin-bottom: 10px;
-  text-align: center;
-  padding: 5px;
-  display: block;
-  font-size: 16px;
-  border-radius: 5%;
+
+.search-box{
+    margin-left:1010px;
+    color: black;
+    width:600px;
+    padding-left:0;
+    border:none;
+    border-bottom: 2px;
+}
+input{
+     background-color:rgba(0, 0, 0, 0);
+    color:white;
+    border: none;
+    outline:none;
+    height:453x;
+    transition:height 1s;
+    -webkit-transition:height 1s;
+    width: 25px;
+}
+index:focus{
+     height:50px;
+    font-size:16px;
 }
 
 .btn:hover {
@@ -188,5 +273,28 @@ li i{
 	transition: 0.5s;
 
 }
-
+.section-title{
+    margin-left:60px;
+    color:#3EDF67;
+}
+#upload-files{
+    text-align: center;
+    
+}
+.gbtn{
+    background-color: #313D89;
+    border-radius: 10px;
+    color:aliceblue;
+}
+.gbtn:hover{
+    background-color: ;
+    transition:0.2s;
+}
+h4{
+    color:#DFC23E;
+    font-size: 23px;
+    
+}.searchbtn{
+    width:40px;
+}
 

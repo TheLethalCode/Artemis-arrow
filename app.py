@@ -122,7 +122,12 @@ def profile():
 
 @app.route('/song')
 def song_list():
+
 	song = request.args.get('song')
+	
+	if song is None:
+		return render_template("songs.html")
+
 	results  = ext_down.video_id(song)
 	
 	URL = "http://localhost:5000/song_down?"
