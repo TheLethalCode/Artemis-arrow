@@ -1,22 +1,29 @@
 body{
-	background: url("../images/AUTUMN_fall_tree_forest_landscape_nature_leaves_1920x1280.jpg")repeat 0 0;
-	background-color:firebrick;
+	background-image:url("../images/735997.jpg");
+	background-color:black;
     background-repeat: no-repeat;
-    
+    background-size: cover;
     
 
 }
 h1{
     text-align: center;
-	font-family: "Bebas Neue", Arial;
-    margin-left:50px;
+	
+    margin-left:0px;
+    margin-right:1300px;
     -webkit-animation:colorchange 20s infinite alternate;
     font-family:fantasy;
     height:60px;
-    font-size: 50px;  
-    font-family:'Righteous';
+    font-size: 35px;  
+    font-family:'Mitr';
+    
       
     }
+.de{
+    font-size:55px;
+    font-family: 'Black Ops One';
+}
+
 
     @-webkit-keyframes colorchange {
       0% {
@@ -79,11 +86,14 @@ h1{
 h3{
     text-align: center;
     color:#E8E5E5;
-    font-family:
+    font-family:'Julius Sans One';
+    font-size:25px;
 }
 h2{
     text-align: center;
-    color:#62C746;
+    color:#2ECC71;
+    font-size: 29px;
+    font-family:'Covered By Your Grace';
 }
 #selection{
     padding-left: 600px;
@@ -94,33 +104,32 @@ h2{
 
 
 #book-btn{
-    background-color:#7D4B12 ;
+    background-color:#0484FC;
     font-size: 30px;
-    
-    margin:2px;
-    border-radius:60px;
+    border-color:#7D4B12#FC0804
+    border-radius:10px;
     
 }
 #book-btn:hover{
-    background-color: ;
+    background-color:darkblue;
     transition:0.2s;
 }
 #song-btn{
-    background-color:#7D4B12;
+    background-color:#8F04FC;
     font-size: 30px;
     padding:2px;
     margin:4px;
-     border-radius:60px;
+     border-radius:10px;
 }
 #song-btn:hover{
     background-color:cadetblue;
     transition:0.2s;
 }#anime-btn{
-    background-color:#7D4B12;
+    background-color:#04D2FC;
     font-size: 30px;
     padding:2px;
     margin:4px;
-     border-radius:60px;
+     border-radius:10px;
 }
 #anime-btn:hover{
     background-color:forestgreen;
@@ -139,14 +148,7 @@ nav{
 }
 
 /* Style the search field */
-form.example input[type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float: left;
-  width: 70%;
-  background: #f1f1f1;
-}
+
 
 /* Style the submit button */
 form.example button {

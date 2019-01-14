@@ -5,7 +5,7 @@ body{
 }
 .search{
     font-size: 20px;
-    margin-left:980px;
+    margin-left:950px;
     opacity:0.5;
     padding:0;
     border-color:#fff;
@@ -54,7 +54,7 @@ h2{
     margin-left:620px;
     color:#1C2833;
     font-size:40px;
-    margin-right:557px;
+    margin-right:560px;
         border:2px solid #1C2833;
     font-family:'Varela Round';
 }
@@ -63,7 +63,7 @@ h2{
 }
 .more{
     color:black;
-    font-size:23px;
+    font-size:21px;
     
 }
 .more:hover{
@@ -72,13 +72,13 @@ h2{
 }
 .cov{
     margin-left:350px;
-    margin-right:340px;
+    margin-right:370px;
     border:3px solid #5D6D7E;
     opacity:0.6;
 }
 .btn{
-    margin-left:100px;
-    margin:30px;
+    margin-left:80px;
+    margin:25px;
     font-size:20px;
     border-radius:10px;
     font-family:'ZCOOL KuaiLe';
