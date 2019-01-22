@@ -1,5 +1,3 @@
-import authentication as at
-
 def build_resource(properties):
     """
     This builds the body listed by the properties which can further be
@@ -28,11 +26,13 @@ def build_resource(properties):
                 ref = ref[key]
     return resource
 
+
 def playlistItem_delete(service,did):
     """
     Deletes an item in the playlist represented by the playlistid
     """
     service.playlistItems().delete(id=did).execute()
+
 
 def playlistItem_insert(service,playlistId,videoId,kind="youtube#video"):
     """
@@ -44,6 +44,7 @@ def playlistItem_insert(service,playlistId,videoId,kind="youtube#video"):
     resource = build_resource(properties)
     service.playlistItems().insert(body=resource,part="snippet").execute()
 
+
 def create_playlist(service,Name):
     """
     Creates a new playlist by the given name and returns its ID
@@ -53,11 +54,13 @@ def create_playlist(service,Name):
     resource = build_resource(newplaylist)
     return service.playlists().insert(body=resource,part="snippet,status").execute()["id"]
 
+
 def delete_playlist(service,did):
     """
     Deletes a playlist by the represented id
     """
     service.playlists().delete(id=did).execute()
+
 
 def extract_playlist_id(service,playlistName,no=0):
     
@@ -94,6 +97,7 @@ def extract_playlist_id(service,playlistName,no=0):
 
     return PlayID
 
+
 def playlist_list(service,playlist_id):
 
     """
@@ -114,8 +118,3 @@ def playlist_list(service,playlist_id):
             break
     return song_ids
 
-if __name__ == '__main__':
-
-    service =  at.get_authenticated_service_y()
-    id = extract_playlist_id(service,"Mine",1)
-    delete_playlist(service,id)

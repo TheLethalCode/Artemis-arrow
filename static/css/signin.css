@@ -117,7 +117,6 @@ color:rgb(58, 151, 29);
 }
 
 
-
 .bottom-bar::after{
     display: block;
     content: '';

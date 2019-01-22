@@ -1,10 +1,8 @@
 body{
-	background-image:url("../images/735997.jpg");
-	background-color:black;
+    background-image:url("../images/735997.jpg");
+	  background-color:black;
     background-repeat: no-repeat;
     background-size: cover;
-    
-
 }
 h1{
     text-align: center;
